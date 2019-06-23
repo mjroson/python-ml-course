@@ -8,7 +8,7 @@ services:
       - .env
     command: bash -c "jupyter notebook --allow-root --NotebookApp.password='' --NotebookApp.token='' --NotebookApp.disable_check_xsrf='True'"
     volumes:
-      - ./notebooks:/home/jovyan/work
+      - ./notebooks:/home/jovyan/notebooks
       - ./datasets:/home/jovyan/datasets
       - ./requirements.txt:/home/jovyan/requirements.txt
     ports:
